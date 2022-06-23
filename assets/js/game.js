@@ -25,9 +25,9 @@ var fight = function () {
 
 
 //check enemy's health 
-if (enemyHealth <= 0) 
+if (enemyHealth <= 0) {
 window.alert(enemyName + " has died!")
-else {
+}else {
     window.alert(enemyName + " still has " + enemyHealth + " health left.")
 }
 
@@ -44,10 +44,9 @@ console.log( enemyName + " attacked " + playerName + ". " + playerName + " now h
   }
 
 
-  // if player choses to skip
+  // if player chooses to skip
 
-  
-} else if (promptFight === "skip" || promptFight === "SKIP") {
+else if (promptFight === "skip" || promptFight === "SKIP") {
     window.alert(playerName + " has chosen to skip the fight!");
   } else {
     window.alert("You need to choose a valid option. Try again!");
@@ -67,12 +66,6 @@ console.log( enemyName + " attacked " + playerName + ". " + playerName + " now h
       " health remaining. "
   );
 
-  //check enemy's health
-  if (enemyHealth <= 0) {
-    window.alert(enemyName + " has died!");
-  else {
-    window.alert(enemyName + " still has " + enemyHealth + " health left.");
-  }
 
 
 
