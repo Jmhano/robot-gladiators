@@ -1,3 +1,6 @@
+//alert players that they are starting the round
+window.alert("Welcome to Robot Gladiators!");
+
 var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
 var playerAttack = 10;
@@ -9,9 +12,6 @@ console.log(playerName, playerAttack, playerHealth);
 var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
-
-//alert players that they are starting the round
-window.alert("Welcome to Robot Gladiators!");
 
 //fight function
 var fight = function (enemyName) {
@@ -86,6 +86,7 @@ var fight = function (enemyName) {
 
       //if player did not choose 1 or 2 in prompt
     } else {
+      return;
       window.alert("You need to choose a valid option. Try again!");
     }
   }
@@ -94,7 +95,7 @@ var fight = function (enemyName) {
 
 //run fight function to start game
 for (var i = 0; i < enemyNames.length; i++) {
-  // call fight function with enemy robot
-  debugger;
-  fight(enemyNames[i]);
+  var pickedEnemyName = enemyNames[i];
+  enemyHealth = 50;
+  fight(pickedEnemyName);
 }
